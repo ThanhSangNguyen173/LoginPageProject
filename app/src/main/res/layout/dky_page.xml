@@ -109,6 +109,7 @@
         android:layout_height="wrap_content"
         android:textStyle="italic"
         android:textSize="16dp"
+        android:buttonTint="#D54D4D"
         android:checked="false"
         android:text="Tôi đồng ý với tất cả các điều khoản của BOXYZVN Software Co.,Ltd" />
 
@@ -120,9 +121,9 @@
         android:id="@+id/dky2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#D54D4D"
+        android:backgroundTint="#CAC9C9"
         android:enabled="false"
         android:text="đăng ký"
-        android:textColor="#EFEFEF"/>
+        />
 
 </LinearLayout>

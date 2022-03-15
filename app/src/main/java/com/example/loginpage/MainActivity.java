@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 if (str1.isEmpty() || str2.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Chào mừng quay trở lại, " + str1, Toast.LENGTH_SHORT).show();
+                    Intent intent2 = new Intent(MainActivity.this, viewflipper.class);
+                    startActivity(intent2);
                 }
             }
         });
