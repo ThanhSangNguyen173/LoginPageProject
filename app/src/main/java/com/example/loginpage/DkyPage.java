@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class DkyPage extends AppCompatActivity {
     Button dky2;
-    EditText ho,ten,dob,pass,copass;
+    EditText ho,ten,dob,pass,copass,id;
     CheckBox checkBox;
     RadioButton nam,nu;
     @Override
@@ -22,6 +22,7 @@ public class DkyPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dky_page);
 
+        id = findViewById(R.id.editTextID);
         dky2 = findViewById(R.id.dky2);
         ho = findViewById(R.id.editTextHo);
         ten = findViewById(R.id.editTextTen);
@@ -61,9 +62,10 @@ public class DkyPage extends AppCompatActivity {
                 String dk3 = dob.getText().toString().trim();
                 String dk4 = pass.getText().toString().trim();
                 String dk5 = copass.getText().toString().trim();
+                String dk6 = id.getText().toString().trim();
                 Boolean b = !checkBox.isChecked();
 
-                if (dk1.isEmpty() || dk2.isEmpty() || dk3.isEmpty() || dk4.isEmpty() || dk5.isEmpty() || b ) {
+                if (dk1.isEmpty() || dk2.isEmpty() || dk3.isEmpty() || dk4.isEmpty() || dk5.isEmpty() ||dk6.isEmpty() || b ) {
                     Toast.makeText(DkyPage.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(DkyPage.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();

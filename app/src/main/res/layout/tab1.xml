@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"
+        android:text="About BOXYZVN Co.,Ltd"
+        android:textAllCaps="false"
+        android:textColor="#D54D4D"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="BOXYZ VN, founded in 2019, is a company with more than 7 members. With the mission of connecting international businesses with Top Talent in Asia, BOXYZ has always made every effort to bring the world “Awesome” values."
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/community" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="We continuously consult our clients as a professional company in many different sectors, not only in programming or design but also in project management, design and business consultation, providing financial support and marketing. Along with the increase in personnel, our solution provision segment has also been expanded.Not only do we create software products, BOXYZ also creates services and business industries and establishes subsidiaries if necessary. We will wholeheartedly try our best to create a state-of-the-art infrastructure."
+        android:textSize="18dp" />
+
+</LinearLayout>

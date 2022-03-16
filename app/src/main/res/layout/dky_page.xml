@@ -12,7 +12,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="137dp"
+        android:layout_height="wrap_content"
         android:text="member registration"
         android:textAllCaps="true"
         android:textColor="#D54D4D"
@@ -99,9 +99,6 @@
         android:ems="10"
         android:hint="Confirm password/Xác nhận mật khẩu"
         android:inputType="textPassword" />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -112,10 +109,6 @@
         android:buttonTint="#D54D4D"
         android:checked="false"
         android:text="Tôi đồng ý với tất cả các điều khoản của BOXYZVN Software Co.,Ltd" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
 
     <Button
         android:id="@+id/dky2"

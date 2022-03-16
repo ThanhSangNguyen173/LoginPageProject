@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:text="Android Developer"
+        android:textAllCaps="false"
+        android:textColor="#D54D4D"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="• Mức lương hấp dẫn, xét tăng theo năng lực làm việc."
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="• 12 ngày phép năm và nghỉ lễ Tết theo quy định Nhà nước, được đóng BHXH đầy đủ, khám sức khoẻ định kỳ."
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="• Du lịch hằng năm và tham gia vào các hoạt động thú vị tại công ty: team building, company trip, morning talking, weekend technical hours,..."
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="• Được đào tạo để phát triển kỹ năng chuyên môn và tham gia vào các dự án thực tế tại công ty."
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingTop="30dp"
+            android:src="@drawable/devios" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="more information"
+                android:textAllCaps="true"
+                android:textColor="#D54D4D"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtdk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="email@sample.com"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/dk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D54D4D"
+                android:text="Đăng ký"
+                android:textColor="#EFEFEF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

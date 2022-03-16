@@ -18,20 +18,23 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/anh1"
-            android:scaleType="fitCenter"></ImageView>
+            android:src="@drawable/anh1"
+            android:background="@color/white"
+            android:scaleType="centerInside"></ImageView>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/anh2"
-            android:scaleType="fitCenter"></ImageView>
+            android:src="@drawable/anh2"
+            android:background="@color/white"
+            android:scaleType="centerInside"></ImageView>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/anh3"
-            android:scaleType="fitCenter"></ImageView>
+            android:src="@drawable/anh3"
+            android:background="@color/white"
+            android:scaleType="centerInside"></ImageView>
     </ViewFlipper>
 
     <LinearLayout
@@ -42,25 +45,40 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnpre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="back"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:textColor="#D54D4D"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnjoin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="Join in"
+            android:textSize="20dp"
+            android:backgroundTint="#D54D4D"
+            android:textColor="#EFEFEF"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="next"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:textColor="#D54D4D" />
     </LinearLayout>
 
 
