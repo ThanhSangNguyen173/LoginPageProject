@@ -118,5 +118,13 @@
         android:enabled="false"
         android:text="đăng ký"
         />
+    <Button
+        android:id="@+id/huydk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CAC9C9"
+        android:enabled="true"
+        android:text="hủy"
+        />
 
 </LinearLayout>

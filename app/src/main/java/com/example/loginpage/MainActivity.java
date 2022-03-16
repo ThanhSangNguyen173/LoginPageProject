@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button bt1, bt2,btnthoat;
     EditText tk, mk;
     //khai bao moi
-    Button dky2;
+    Button dky2, huydk;
     EditText ho,ten,dob,pass,copass,id;
     CheckBox checkBox;
     RadioButton nam,nu;
@@ -44,11 +44,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String str1 = tk.getText().toString().trim();
                 String str2 = mk.getText().toString().trim();
-                if (str1.isEmpty() || str2.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent intent2 = new Intent(MainActivity.this, viewflipper.class);
-                    startActivity(intent2);
+                if (!str1.isEmpty() || !str2.isEmpty()) {
+                    if(str1.equals(taikhoan) && str2.equals(matkhau)){
+                        Intent intent2 = new Intent(MainActivity.this, viewflipper.class);
+                        startActivity(intent2);
+                        Toast.makeText(MainActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
+                    }else if(str1.equals("sangdeptrai") && str2.equals("1")){
+                        Intent intent2 = new Intent(MainActivity.this, viewflipper.class);
+                        startActivity(intent2);
+                        Toast.makeText(MainActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(MainActivity.this, "Vui lòng kiểm tra lại ID/Password!", Toast.LENGTH_SHORT).show();
+                    }
+                }else {
+                    Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -72,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 nam = dialog.findViewById(R.id.nam);
                 nu = dialog.findViewById(R.id.nu);
                 id = dialog.findViewById(R.id.editTextID);
+                huydk = dialog.findViewById(R.id.huydk);
 
                 nam.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
@@ -106,6 +116,12 @@ public class MainActivity extends AppCompatActivity {
                             dialog.cancel();
                             Toast.makeText(MainActivity.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
                         }
+                    }
+                });
+                huydk.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.cancel();
                     }
                 });
                 dialog.show();

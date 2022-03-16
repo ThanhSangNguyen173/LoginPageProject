@@ -18,9 +18,9 @@
         android:textColor="#D54D4D"
         android:textSize="30dp"
         android:textStyle="bold" />
-    <Space
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"/>
+        android:layout_height="150dp" />
 
     <EditText
         android:id="@+id/tk"
